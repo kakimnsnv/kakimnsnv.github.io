@@ -4,45 +4,414 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>404 education</title>
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="stylesheet" href="404.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="body">
     <container>
         <header>
             <img src="assets/logo.png" alt="logo" id="ico" class="icon">
-            <label>
-                <input type="checkbox">
+            <label id="Menu">
+                <input id="menuInput" type="checkbox">
                 <span class="menu"> <span class="hamburger"></span></span>
-                <ul>
-                    <li><a href="#">Наши курсы</a></li>
-                    <li><a href="#">Преимущества</a></li>
-                    <li><a href="#">Работы студентов</a></li>
-                    <li><a href="#">Отзывы</a></li>
-                    <li><a href="#">+7 707 667 37 10</a></li>
-                </ul>
+                <nav>
+                    <ul>
+                        <li><a class="menuLink" href="#coursesList">Наши курсы</a></li>
+                        <li><a class="menuLink" href="#reasons">Преимущества</a></li>
+                        <li><a class="menuLink" href="#studWorks">Работы студентов</a></li>
+                        <li><a class="menuLink" href="#section--3">Отзывы</a></li>
+                        <li><a class="menuLink" href="tel:+7-707-667-37-10">+7 707 667 37 10</a></li>
+                    </ul>
+                </nav>
             </label>
         </header>
         <main>
-            <h1>404</h1>
-            <button class="btn btn_main"><span>Записаться на курс</span></button>
-            <button class="btn btn_secondary">Посмотреть курсы</button>
+            <div class="btn_wrap">
+                <h1 data-aos="slide-left" data-aos-duration="1000">404</h1>
+                <a href="#footer"><button class="btn btn_main" data-aos="zoom-in" data-aos-delay="250" data-aos-duration="2000">Записаться на курс</button></a>
+                <a href="#coursesList"><button class="btn btn_secondary" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="2000">Посмотреть курсы</button></a>
+            </div>
             <span id="line"></span>
-            <h2>IT курсы в Алматы</h2>
+            <h2 data-aos="fade-left" data-aos-delay="50" data-aos-duration="2000">IT курсы в Алматы</h2>
             <h3>retakes not found</h3>
             <img src="assets/404_main_svg.png">
         </main>
-        <courses>
-            <article></article>
+        <courses id="courses">
+            <div class="bg" id="coursesList">
+                <a href="#coursesList"><img class="arrow" src="assets/arrow.png"></a>
+                <div class="courses-wrap">
+                    <p class="ourCourses" data-aos="fade-up">Наши курсы</p>
+                    <div class="courses">
+                        <article data-aos="fade-up">
+                            <p>Программирование на c++</p>
+                            <img src="assets/c++.png">
+                        </article>
+                        <article data-aos="fade-up"> 
+                            <p>Программирование на Python</p>
+                            <img src="assets/python.png">
+                        </article>
+                        <article data-aos="fade-up">
+                            <p>Компьютерная грамотность </p>
+                            <img src="assets/comp.png">
+                        </article>
+                        <article data-aos="fade-up">
+                            <p>Математика </p>
+                            <img src="assets/calc.png">
+                        </article>
+                        <article data-aos="fade-up">
+                            <p>Английский</p>
+                            <img src="assets/english.png">
+                        </article>
+                        <article data-aos="fade-up">
+                            <p>Алгоритмы</p>
+                            <img src="assets/algo.png">
+                        </article>
+                    </div>
+                </div>
+            </div>
         </courses>
+        
+        <reasons id="reasons">
+            <p id="why_title" data-aos="fade-up">Почему выбирают именно нас?</p>
+            <p style="text-align: center; font-size: 0.8em; @media (max-width:600px) {font-size:0.1em; font-weight: 400;};">Нажмите, чтобы посмотреть</p>
+            <div class="cardWrap">
+                <div class="card" data-aos="fade-up" ontouchstart="">
+                    <div class="card__side card__side--front">
+                        <div class="card__title">
+                            <h4 class="card__heading">Качество</h4>
+                        </div>
+                    </div>
+                    <div class="card__side card__side--back">
+                    <div class="card__cta">
+                        <div class="card__price-box">
+                        <p class="card__price-only">Мы постоянно работаем над повышением качеств</p>
+                        <p class="card__price-value">контроль за качеством учебного процесса</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        
+                <div class="card" data-aos="fade-up" ontouchstart="">
+                    <div class="card__side card__side--front">
+                        <div class="card__title">
+                            <h4 class="card__heading">Индивуальный подход</h4>
+                        </div>
+                    </div>
+                    <div class="card__side card__side--back">
+                    <div class="card__cta">
+                        <div class="card__price-box">
+                        <p class="card__price-only">учебный план выстраивается индивидуально</p>
+                        <p class="card__price-value">Так ты технарь или гуманитарий? Окей</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        
+                <div class="card" data-aos="fade-up" ontouchstart="">
+                    <div class="card__side card__side--front">
+                        <div class="card__title">
+                            <h4 class="card__heading">Низкие цены</h4>
+                        </div>
+                    </div>
+                    <div class="card__side card__side--back">
+                    <div class="card__cta">
+                        <div class="card__price-box">
+                        <p class="card__price-only">обучение, доступное для всех</p>
+                        <p class="card__price-value">Это только начало</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="card" data-aos="fade-up" ontouchstart="">
+                    <div class="card__side card__side--front">
+                        <div class="card__title">
+                            <h4 class="card__heading">Топ учителя</h4>
+                        </div>
+                    </div>
+                    <div class="card__side card__side--back">
+                    <div class="card__cta">
+                        <div class="card__price-box">
+                        <p class="card__price-only">Высокий уровень профессионализма преподавателей</p>
+                        <p class="card__price-value">А ты сам попробуй</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        
+                <div class="card" data-aos="fade-up" ontouchstart="">
+                    <div class="card__side card__side--front">
+                        <div class="card__title">
+                            <h4 class="card__heading">Обратная связь</h4>
+                        </div>
+                    </div>
+                    <div class="card__side card__side--back">
+                    <div class="card__cta">
+                        <div class="card__price-box">
+                        <p class="card__price-only">Предоставляем анализ обучающегося</p>
+                        <p class="card__price-value">Фокус на сильные стороны по принципу 80 на 20</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        
+                <div class="card" data-aos="fade-up" ontouchstart="">
+                    <div class="card__side card__side--front">
+                        <div class="card__title">
+                            <h4 class="card__heading">Нестандартные технологии обучения</h4>
+                        </div>
+                    </div>
+                    <div class="card__side card__side--back">
+                    <div class="card__cta">
+                        <div class="card__price-box">
+                        <p class="card__price-only">объясним сложное простыми словами</p>
+                        <p class="card__price-value">Компьютер это просто машина</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </reasons>
+
+        <examples>
+            <h2 id="studWorks" data-aos="fade-up">Работы студентов</h2>
+            <p style="text-align: center; margin-bottom: 50px;" data-aos="fade-up">Нажмите, чтобы посмотреть</p>
+            <div class="examples_wrap">
+                <div class="example ex1" data-aos="fade-up" ontouchstart="">
+                    <div class="text">
+                        <p class="example_name">Димаш</p>
+                        <p class="example_info">Сайт про Xbox</p>
+                    </div>
+                </div>
+                <div class="example ex2" data-aos="fade-up" ontouchstart="">
+                    <div class="text">
+                        <p class="example_name">Айдана</p>
+                        <p class="example_info">Магазин одежды</p>
+                    </div>
+                </div>
+                <div class="example ex3" data-aos="fade-up" ontouchstart="">
+                    <div class="text">
+                        <p class="example_name">Алдияр</p>
+                        <p class="example_info">Юридические дела</p>
+                    </div>
+                </div>
+                <div class="example ex4" data-aos="fade-up" ontouchstart="">
+                    <div class="text">
+                        <p class="example_name">Димаш</p>
+                        <p class="example_info">Дизайн про морожное</p>
+                    </div>
+                </div>
+                <div class="example ex5" data-aos="fade-up" ontouchstart="">
+                    <div class="text">
+                        <p class="example_name">Меруерт</p>
+                        <p class="example_info">Ювелирный сайт</p>
+                    </div>
+                </div>
+                <div class="example ex6" data-aos="fade-up" ontouchstart="">
+                    <div class="text">
+                        <p class="example_name">Аскар</p>
+                        <p class="example_info">Сайт Квартиры</p>
+                    </div>
+                </div>
+            </div>
+        </examples>
+
+        <section class="section" id="section--3">
+
+            <div id="link-testi" class="slider">
+              <div class="slide slide--1">
+                <div class="testimonial">
+                  <h5 class="testimonial__header">Отзывы Учеников</h5>
+                  <blockquote class="testimonial__text">
+                    Решил я записатья в этот лагерь и с точностью могу сказать, что не ошибся.
+      Очень понравился коллектив особенно как общаются учителя и преподают. Даже можно сказать лучше чем учителя из обычных школ. Сам давно хотел стать программистом, но не знал с чего начать и где развиваться. Пришел сюда Батыр, Дамир и Сабир (учителя) указали мои сильные и слабые стороны и указали где мне прокачиваться. С уверенностью могу сказать что за эти две недели я изучил больше чем смог бы научитсяь за месяц дома используя интернет
+                  </blockquote>
+                  <address class="testimonial__author">
+                    <img src="assets/bakha.jpg" alt="" class="testimonial__photo" />
+                    <h6 class="testimonial__name">Бақытжан</h6>
+                    <p class="testimonial__location">16лет, 2ой поток</p>
+                  </address>
+                </div>
+              </div>
+      
+              <div class="slide slide--2">
+                <div class="testimonial">
+                  <h5 class="testimonial__header">
+                    Отзыв ученика, который прилетел из столицы
+                  </h5>
+                  <blockquote class="testimonial__text">
+                     Лагерь понравился тем, что у него есть своя атмосфера. Я бы сказал как дома, домашняя настроение. Приходишь утром, надеваешь тапочки и заходишь к урокам. В лагере негатива нет и все только в позитиве. За эти две недели мы не только прогали, но и совмещали это с различными играми такие как настольный теннис, баскетбол, play station 4 и настольные игры. Чисто дрюжелюбная атмосфера. 404 не просто лагерь, а большая семья где все любят и уважают друг друга.
+                  </blockquote>
+                  <address class="testimonial__author">
+                    <img src="assets/dim.jpg" alt="" class="testimonial__photo" />
+                    <h6 class="testimonial__name">Димаш</h6>
+                    <p class="testimonial__location">17лет, 2ой поток</p>
+                  </address>
+                </div>
+              </div>
+      
+              <div class="slide slide--3">
+                <div class="testimonial">
+                  <h5 class="testimonial__header">
+                    Отзыв ученика, которому проводили уроки на английском языке
+                  </h5>
+                  <blockquote class="testimonial__text3">
+                     На самом деле все было классно. Я как раз была заинтересована в том, чтобы изучить программирование и этот лагерь просто замечательный. Вначале я переживала потому что я думала может быть здесь никто не говорит по английский. Думала что все будут разговаривать на русском. Учителя обьясняли все очень понятно не только на русском, но и на английсском не хуже. Я полностью понимала о том что обьясняли мне учителя и с радостью приходила бы в этот лагерь каждый день. Для меня этот лагерь предоставил не только знаний по программированию но еще и жизненные навыки. Никогда не поздно начинать изучать программирование. За эти две недели я стала уверена в своих навыках программирования и вижу что ушла далеко потому что я смогла изучить несколько языков программирования и применять их к другим приложениям.
+                  </blockquote>
+                  <address class="testimonial__author">
+                    <img src="assets/meru.jpg" alt="" class="testimonial__photo" />
+                    <h6 class="testimonial__name">Meruet</h6>
+                    <p class="testimonial__location">16 лет, 3ий поток</p>
+                  </address>
+                </div>
+              </div>
+              <button class="slider__btn slider__btn--left">&larr;</button>
+               <button class="slider__btn slider__btn--right">&rarr;</button>
+              <div class="dots"></div>
+            </div>
+        </section>
+
+        <footer class="footer" id="footer">
+            <div class="container2">
+                <div class="footer__inner">
+                    <div class="footer__title">Получить консультацию</div>
+                    <div class="footer__form footer__form-bg">
+                        <form action="https://sheetdb.io/api/v1/l3vsxb3ujrmr8" method="POST" id="sheetdb-form">
+                            <input class="form__name" name="data[name]" type="text" placeholder="Имя">
+                            <input type="tel" name="data[phone]" class="form__phone" placeholder="Телефон">
+                            <button type="submit" name="submit" class="form__btn">Получить консультацию</button>
+                        </form>
+                    </div>
+                    <div class="contacts">
+                        <a href="#"><img src="assets/logoWhite.png" class="footer__logo"></a>
+                        <div class="footer__contacts">
+                            <ul>
+                                <li class="contacts__list"><i class="fa-solid fa-phone"></i> <a class="num" href="tel:+7-707-667-37-10"> +7 707 667 37 10</a></li>
+                                <li class="contacts__list"><i class="fa-solid fa-location-dot"></i> г. Алматы, проспект Достык, 162 к5</li>
+                                <ul class="socials">
+                                    <li><a class="social-item" href="https://www.instagram.com/404education/"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a class="social-item" href="https://api.whatsapp.com/send?phone=87076673710"><i class="fa-brands fa-whatsapp"></i></a></li>
+                                    <li><a href="https://telegram.me/batyrsultaan" class="social-item"><i class="fa-brands fa-telegram"></i></a></li>
+                                </ul>
+                            </ul>
+                        </div>
+                        <div class="footer__courses">
+                            <div class="course__list">
+                                <ul>
+                                    <li class="footer__list active">Курсы</li>
+                                    <li class="footer__list">Принципы Программирование на Python</li>
+                                    <li class="footer__list">C++</li>
+                                    <li class="footer__list">Алгоритмы</li>
+                                    <li class="footer__list">Компьютерная грамотность</li>
+                                    <li class="footer__list">Математика</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </container>
 
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        const slider = function () {
+      const slides = document.querySelectorAll('.slide');
+      const btnLeft = document.querySelector('.slider__btn--left');
+      const btnRight = document.querySelector('.slider__btn--right');
+      const dotContainer = document.querySelector('.dots');
     
+      let curSlide = 0;
+      const maxSlide = slides.length;
+    
+      // Functions
+      const createDots = function () {
+        slides.forEach(function (_, i) {
+          dotContainer.insertAdjacentHTML(
+            'beforeend',
+            `<button class="dots__dot" data-slide="${i}"></button>`
+          );
+        });
+      };
+    
+      const activateDot = function (slide) {
+        document
+          .querySelectorAll('.dots__dot')
+          .forEach(dot => dot.classList.remove('dots__dot--active'));
+    
+        document
+          .querySelector(`.dots__dot[data-slide="${slide}"]`)
+          .classList.add('dots__dot--active');
+      };
+    
+      const goToSlide = function (slide) {
+        slides.forEach(
+          (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
+        );
+      };
+    
+      // Next slide
+      const nextSlide = function () {
+        if (curSlide === maxSlide - 1) {
+          curSlide = 0;
+        } else {
+          curSlide++;
+        }
+    
+        goToSlide(curSlide);
+        activateDot(curSlide);
+      };
+    
+      const prevSlide = function () {
+        if (curSlide === 0) {
+          curSlide = maxSlide - 1;
+        } else {
+          curSlide--;
+        }
+        goToSlide(curSlide);
+        activateDot(curSlide);
+      };
+    
+      const init = function () {
+        goToSlide(0);
+        createDots();
+    
+        activateDot(0);
+      };
+      init();
+    
+      // Event handlers
+      btnRight.addEventListener('click', nextSlide);
+      btnLeft.addEventListener('click', prevSlide);
+    
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowLeft') prevSlide();
+        e.key === 'ArrowRight' && nextSlide();
+      });
+    
+      dotContainer.addEventListener('click', function (e) {
+        if (e.target.classList.contains('dots__dot')) {
+          const { slide } = e.target.dataset;
+          goToSlide(slide);
+          activateDot(slide);
+        }
+      });
+    };
+    slider();
+        </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="fontawesome-free-6.1.2-web/js/all.min.js"></script>
+        <script src="script.js"></script>
 </body>
 </html>
