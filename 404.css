@@ -547,15 +547,6 @@ body{
     margin-bottom: 50px;
 }
 
-.form__btn{
-    margin-right: 20px;
-    border: 1px solid #F82020;
-    padding: 25px 35px;
-    border-radius: 15px;
-    background: linear-gradient(#F82020, #B71919);
-    color: #fff;
-    margin-left: 185px;
-}
 
 .form__btn:hover{
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
