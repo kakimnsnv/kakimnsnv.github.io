@@ -1126,3 +1126,94 @@ li{
     font-size: 8vw;
   }
 }
+
+@media(max-width: 600px){
+  .course{
+      height: 150px;
+      width: 200px;
+  }
+
+  .course__title{
+      font-size: 15px;
+  }
+
+  .course__img{
+      width: 50%;
+      left: 75px;
+      top: 50px;
+  }
+
+  .course-title{
+      margin-bottom: 35px;
+  }
+
+  .footer__form{
+      width: 500px;
+      margin: 20px auto;
+  }
+
+  .form__name{
+      width: 350px;
+  }
+
+  .form__phone{
+      width: 350px;
+  }
+
+  .form__btn{
+      margin-left: 125px;
+  }
+}
+
+@media(max-width: 520px){
+  .footer__form{
+      width: 350px;
+      height: 280px;
+  }
+
+  .form__name{
+      margin-top: 25px;
+      margin-left: 55px;
+      width: 250px;
+  }
+
+  .form__phone{
+      margin-left: 55px;
+      width: 250px;
+      margin-bottom: 20px;
+  }
+
+  .form__btn{
+      border-radius: 15px;
+      padding: 16px 24px;
+      margin-left: 75px;
+  }
+}
+
+@media(max-width:365px){
+  .footer__form{
+      width: 250px;
+      height: 220px;
+  }
+  .form__name{
+      width: 190px;
+      height: 25px;
+      margin-top: 10px;
+      margin-left: 30px;
+  }
+  .form__phone{
+      width: 190px;
+      height: 25px;
+      margin-top: 10px;
+      margin-left: 30px;
+  }
+  .form__btn{
+      margin-left: 50px;
+      padding: 8px 16px;
+      margin-left: 30px;
+  }
+
+  .animations{
+      margin-top: 50px;
+  }
+}
