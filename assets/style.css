@@ -1,0 +1,52 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: transparent;
+  color: gray;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 14px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  color: #dc143c;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+.header{
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu{
+    width: 500px;
+}
+
+.content{
+    width: 90%;
+    margin: auto;
+}
+
+
+#logo {
+    width: 100px;
+}
