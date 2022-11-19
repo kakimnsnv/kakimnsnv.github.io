@@ -1,7 +1,8 @@
 body, html {
   height: 100%;
   margin: 0;
-  font-family: 'Courier New', Courier, monospace;
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Style tab links */
@@ -14,7 +15,7 @@ body, html {
   cursor: pointer;
   padding: 14px 14px;
   font-size: 17px;
-  width: 25%;
+  width: 50%;
 }
 
 .tablink:hover {
@@ -25,8 +26,7 @@ body, html {
 .tabcontent {
   color: black;
   display: none;
-  padding: 100px 20px;
-  height: 100%;
+  padding-top:20px;
 }
 
 .header{
@@ -38,7 +38,7 @@ body, html {
 }
 
 .menu{
-    width: 500px;
+    width: 250px;
 }
 
 .content{
@@ -49,4 +49,112 @@ body, html {
 
 #logo {
     width: 100px;
+}
+
+
+#about {
+  margin: 40px auto;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+}
+
+.about_title{
+  text-align: center;
+  width: 70%;
+  margin: 90px auto;
+  font-size: x-large;
+
+}
+
+#menu_title {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: normal;
+}
+
+.menu_grid{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.menu_grid_main{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.grid_item {
+  width: 30%;
+}
+
+.grid_item img{
+  width: calc(100% - 15px);
+  height: 70%;
+}
+
+.menu_grid_napitki {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.menu_grid_napitki > .grid_item{
+  width: 20%;
+}
+
+.menu_grid_napitki > .grid_item > img{
+  height: 350px;
+  width: 290px;
+}
+
+.line {
+  margin:  10px auto;
+  width: 98%;
+  height: 2px;
+  color: black;
+  background-color: black;
+}
+
+h4{
+  margin: 10px;
+}
+
+.name {
+  font-weight: 600;
+  font-size: medium;
+}
+
+.price {
+  font-weight: 300;
+  font-size: smaller;
+}
+
+.addition {
+  color: gray ;
+}
+
+#footer {
+  padding: 20px 20px 0 20px;
+  color: black;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer_about {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  color: white;
+  width: 100vw;
+  background-color: black;
+  text-align: center;
 }
