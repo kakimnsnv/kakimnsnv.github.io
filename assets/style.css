@@ -5,6 +5,19 @@ body, html {
   font-family: 'Montserrat', sans-serif;
 }
 
+h1{
+  font-size: 1.25vw;
+}
+h2{
+
+}
+h3{
+
+}
+h4{
+  font-size: 1.19vw;
+}
+
 /* Style tab links */
 .tablink {
   background-color: transparent;
@@ -13,8 +26,8 @@ body, html {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 14px;
-  font-size: 17px;
+  padding: 0.83vw;
+  font-size: 1vw;
   width: 50%;
 }
 
@@ -26,19 +39,19 @@ body, html {
 .tabcontent {
   color: black;
   display: none;
-  padding-top:20px;
+  padding-top:1.19vw;
 }
 
 .header{
-    margin-top: 20px;
-    padding: 10px;
+    margin-top: 1.19vw;
+    padding: 0.595vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .menu{
-    width: 250px;
+    width: 14.88vw;
 }
 
 .content{
@@ -48,12 +61,12 @@ body, html {
 
 
 #logo {
-    width: 100px;
+    width: 5.95vw;
 }
 
 
 #about {
-  margin: 40px auto;
+  margin: 2.38vw auto;
   align-items: center;
   display: flex;
   height: 100vh;
@@ -62,14 +75,13 @@ body, html {
 .about_title{
   text-align: center;
   width: 70%;
-  margin: 90px auto;
-  font-size: x-large;
-
+  margin: 5.35vw auto;
+  font-size: 1.4vw;
 }
 
 #menu_title {
   text-align: center;
-  font-size: xx-large;
+  font-size: 1.9vw;
   font-weight: normal;
 }
 
@@ -110,8 +122,8 @@ body, html {
 }
 
 .menu_grid_napitki > .grid_item > img{
-  height: 350px;
-  width: 290px;
+  height: 20.83vw;
+  width: 17.27vw;
 }
 
 .line {
@@ -128,12 +140,12 @@ h4{
 
 .name {
   font-weight: 600;
-  font-size: medium;
+  font-size: 0.95vw;
 }
 
 .price {
   font-weight: 300;
-  font-size: smaller;
+  font-size: 0.79vw;
 }
 
 .addition {
@@ -141,20 +153,69 @@ h4{
 }
 
 #footer {
-  padding: 20px 20px 0 20px;
+  padding: 1.19vw 1.19vw 0 1.19vw;
   color: black;
   width: 100%;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.19vw;
 }
 
 .footer_about {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 20px;
+  padding: 1.19vw;
   color: white;
   width: 100vw;
   background-color: black;
   text-align: center;
+}
+
+@media(max-width:450px) {
+  #logo {
+    width: 10vw;
+  }
+  h1{
+    font-size: 4vw;
+  }
+  h4{
+    font-size: 3.6vw;
+  }
+  .tablink{
+    font-size: 3.5vw;
+  }
+  .menu{
+    width: 50vw;
+  }
+  .header{
+    flex-direction: column;
+  }
+  #menu_title {
+    font-size: 4vw;
+  }
+  .about_title {
+    font-size: 4vw;
+    width: 90%;
+  }
+  .menu_grid{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .grid_item {
+    width: 50%;
+  }
+  .name {
+    font-weight: 700;
+    font-size: 2.5vw;
+  }
+  .addition{
+    font-size: 2.3vw;
+  }
+  .price {
+    font-weight: 500;
+    font-size: 3vw;
+  }
+  p {
+    margin: 5px;
+  }
 }
