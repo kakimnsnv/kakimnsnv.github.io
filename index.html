@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css">
     <title>Pepero</title>
 </head>
@@ -12,13 +13,13 @@
         <div class="header">
             <div style="display: flex; align-items: center;">
                 <img src="./assets/logo.jpg" alt="Logo" id="logo">
-                <h1 style="margin-left: 20px;">Pepero - ресторан корейской еды</h1>
+                <h1 style="margin-left: 20px;">PEPERO - KOREAN CAFE</h1>
             </div>
             <div class="menu">
-                <button class="tablink" onclick="openPage('Home', this, 'red')">ГЛАВНОЕ</button>
-                <button class="tablink" onclick="openPage('News', this, 'red')" id="defaultOpen">МЕНЮ</button>
-                <button class="tablink" onclick="openPage('Contact', this, 'red')">КОНТАКТЫ</button>
-                <button class="tablink" onclick="openPage('About', this, 'red')">О НАС</button>
+                <!-- <button class="tablink" onclick="openPage('Home', this, 'red')">ГЛАВНОЕ</button> -->
+                <button class="tablink" onclick="openPage('Menu', this, 'red')" id="defaultOpen">MENU</button>
+                <!-- <button class="tablink" onclick="openPage('Contact', this, 'red')">CONTACTS</button> -->
+                <button class="tablink" onclick="openPage('About', this, 'red')">ABOUT US</button>
             </div>
         </div>
         <div class="main">
@@ -26,21 +27,256 @@
                 <h3>Главное чтото</h3>
                 <p>блалблабалбалаблабалаба</p>
             </div>
-            <div id="News" class="tabcontent">
-                <h3>News</h3>
-                <p>Some news this fine day!</p> 
+            <div id="Menu" class="tabcontent">
+                <h1 id="menu_title">Menu</h1>
+                <div class="line"></div>
+                <h4>샐러드/Salads/Салаты</h4>
+                <div class="menu_grid">
+                    <div class="grid_item">
+                        <img src="./assets/salat.jpg" alt="food">
+                        <p class="name">김치/Kimchi/Кимчи</p>
+                        <p class="addition">pickled peking cabbage</p>
+                        <p class="price">1190</p>
+                    </div>
+                    <div class="grid_item">
+                        <img src="./assets/suhari.jpg" alt="food">
+                        <p class="name">깍두기/Kaktugi/Кактуги</p>
+                        <p class="addition">pickled daikon radish</p>
+                        <p class="price">2590</p>
+                    </div>
+                    <div class="grid_item">
+                        <img src="./assets/ramen.jpg" alt="food">
+                        <p class="name">콩나물/Konnamul/Коннамуль</p>
+                        <p class="addition">soy bean sprouts</p>
+                        <p class="price">2390</p>
+                    </div>
+                    <div class="grid_item">
+                        <img src="./assets/ogurcy.jpg" alt="food">
+                        <p class="name">미역무침/Miek muchim/Миек мучим</p>
+                        <p class="addition">sweet and sour seaweed</p>
+                        <p class="price">1140</p>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <h4>반찬/Garnies/Закуски</h4>
+                <div class="menu_grid">
+                    <div class="grid_item">
+                        <img src="./assets/red.jpg" alt="food">
+                        <p class="name">김치전/Kimchijeon/Кимчиджон</p>
+                        <p class="addition">kimchi pancake</p>
+                        <p class="price">2490</p>
+                    </div>
+                    <div class="grid_item">
+                        <img src="./assets/sushi.jpg" alt="food">
+                        <p class="name">김밥/Kimbap/Кимпаб</p>
+                        <p class="addition">roll with rice, vegetables, egg omelet, tuna</p>
+                        <p class="price">2590</p>
+                    </div>
+                    <div class="grid_item">
+                        <img src="./assets/chto.jpg" alt="food">
+                        <p class="name">삼각김밥/Samgak-kimbap/Самгак-кимпаб</p>
+                        <p class="addition">triangular kimbap with tuna</p>
+                        <p class="price">1590</p>
+                    </div>
+                    <div class="grid_item">
+                        <img src="./assets/white.jpg" alt="food">
+                        <p class="name">두부/Tubu/Тубу</p>
+                        <p class="addition"></p>
+                        <p class="price">860</p>
+                    </div>
+                    <div class="grid_item">
+                        <img src="./assets/rise.jpg" alt="food">
+                        <p class="name">밥/Rice/Рис</p>
+                        <p class="addition"></p>
+                        <p class="price">700</p>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <h4>메인 코스/Main Course/Основные блюда</h4>
+                <div class="menu_grid_main">
+                    <div class="grid_item">
+                        <img src="./assets/sausage.jpg" alt="food">
+                        <p class="name">떡볶이/Tteokbokki/Токпокки</p>
+                        <p class="addition">rice sticks in hot sauce with omuk</p>
+                        <p class="price">2990</p>
+                    </div>
+                    <div class="grid_item">
+                        <img src="./assets/omlet.jpg" alt="food">
+                        <p class="name">비빔밥/Bibimbap/Пибимпаб</p>
+                        <p class="addition">boiled rice with namul vegetable salad, beef, fried
+                            egg</p>
+                        <p class="price">2890</p>
+                    </div>
+                    <div class="grid_item">
+                        <img src="./assets/black.jpg" alt="food">
+                        <p class="name">짜장면/Jjajangmyeon/Чаджамён</p>
+                        <p class="addition">noodles with bean sauce with vegetables and
+                            beef</p>
+                        <p class="price">2990</p>
+                    </div>
+                    <div class="grid_item">
+                        <img src="./assets/egg.jpg" alt="food">
+                        <p class="name">김치 볶음밥/Kimchi bokkeumbap/Кимчи покымпаб</p>
+                        <p class="addition">fried rice with kimchi</p>
+                        <p class="price">3290</p>
+                    </div>
+                    <div class="grid_item">
+                        <img src="./assets/risekfc.jpg" alt="food">
+                        <p class="name">돈까스/Tonkatsu/Тонкасы</p>
+                        <p class="addition">pork schnitzel in breadcrumbs with boiled rice</p>
+                        <p class="price">3690</p>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <h4>수프/Soup/Супы</h4>
+                <div class="menu_grid" style="flex-wrap: wrap;">
+                    <div class="grid_item">
+                        <img src="./assets/ramen.jpg" alt="food">
+                        <p class="name">라멘/Ramen/Рамен</p>
+                        <p class="addition">broth, noodles, chicken, egg</p>
+                        <p class="price">2390</p>
+                    </div>
+                    <div class="grid_item">
+                        <img src="./assets/spagetti.jpg" alt="food">
+                        <p class="name">국수/Kuksu/Куксу</p>
+                        <p class="addition">broth, noodles, beef, cucumbers, radishes, greens</p>
+                        <p class="price">2590</p>
+                    </div>
+                    <div class="grid_item">
+                        <img src="./assets/soup.jpg" alt="food">
+                        <p class="name">미역국/Miyeok-guk/Миеккук</p>
+                        <p class="addition">broth, seaweed, beef (rice is served separately)</p>
+                        <p class="price">1500</p>
+                    </div>
+                    <div class="grid_item">
+                        <img src="./assets/soupred.jpg" alt="food">
+                        <p class="name">김치찌개/Kimchi-jjigae/Кимчхиччигэ</p>
+                        <p class="addition">broth, pork, kimchi, tubu</p>
+                        <p class="price">2690</p>
+                    </div>
+                    <div class="grid_item">
+                        <img src="./assets/borw.jpg" alt="food">
+                        <p class="name">육개장/Yukkedyan/Юккедян</p>
+                        <p class="addition">broth, beef, bracken, soy sprouts (rice is served
+                            separately)</p>
+                        <p class="price">2790</p>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <h4>디저트/Desserts/Десерты</h4>
+                <div class="menu_grid">
+                    <div class="grid_item">
+                        <img src="./assets/blin.jpg" alt="food">
+                        <p class="name">호떡/Hotteok/Хотток</p>
+                        <p class="addition">rice flour pancakes with nut filling</p>
+                        <p class="price">1190</p>
+                    </div>
+                    <div class="grid_item">
+                        <img src="./assets/fish.jpg" alt="food">
+                        <p class="name">붕어빵/Punoppan/Пуноппан</p>
+                        <p class="addition">fish-shaped pie with sweet bean filling</p>
+                        <p class="price">440</p>
+                    </div>
+                    <div class="grid_item">
+                        <img src="./assets/pelmen.jpg" alt="food">
+                        <p class="name">송편/Songpyeon/Сонпхён</p>
+                        <p class="addition">rice cake with sesame filling</p>
+                        <p class="price">1190</p>
+                    </div>
+                    <div class="grid_item">
+                        <img src="./assets/pechen.jpg" alt="food">
+                        <p class="name">달고나/Dalgona/Далгона</p>
+                        <p class="addition">candy made of sugar and baking soda</p>
+                        <p class="price">490</p>
+                    </div>
+                    <div class="grid_item">
+                        <img src="./assets/pepperro.jpg" alt="food">
+                        <p class="name">빼빼로/Pepero/Пеперо</p>
+                        <p class="addition">cookies-straws covered with icing</p>
+                        <p class="price">700</p>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <h4>음료/Drinks/Напитки</h4>
+                <div class="menu_grid_napitki">
+                    <div class="grid_item">
+                        <img src="./assets/bonaqua.jpg" alt="food">
+                        <p class="name">물/Water/Вода</p>
+                        <p class="addition"></p>
+                        <p class="price">290</p>
+                    </div>
+                    <div class="grid_item">
+                        <img src="./assets/mayo.jpg" alt="food" style="width: 220px;">
+                        <p class="name">바나나 우유/Banana milk/Банановое молоко</p>
+                        <p class="addition"></p>
+                        <p class="price">590</p>
+                    </div>
+                    <div class="grid_item">
+                        <img src="./assets/Aloe.jpg" alt="food">
+                        <p class="name">알로에/Aloe vera/Алоэ вера</p>
+                        <p class="addition"></p>
+                        <p class="price">590</p>
+                    </div>
+                    <div class="grid_item">
+                        <img src="./assets/coke.jpg" alt="food">
+                        <p class="name">콜라/Cola/Кола</p>
+                        <p class="addition"></p>
+                        <p class="price">490</p>
+                    </div>
+                </div>
+                <div class="menu_grid_napitki">
+                    <div class="grid_item">
+                        <img src="./assets/beer.jpg" alt="food">
+                        <p class="name">소주/Soju/Соджу</p>
+                        <p class="addition">alcoholic beverage, 20% alcohol</p>
+                        <p class="price">3190</p>
+                    </div>
+                    <div class="grid_item">
+                        <img src="./assets/milk.jpg" alt="food" style="width: 220px;">
+                        <p class="name">막걸리/Makgeolli/Макколи</p>
+                        <p class="addition">alcoholic beverage, 7% alcohol</p>
+                        <p class="price">2190</p>
+                    </div>
+                    <div class="grid_item">
+                        <img src="./assets/greentea.jpg" alt="food">
+                        <p class="name">녹차/Green tea/Зеленый чай</p>
+                        <p class="addition"></p>
+                        <p class="price">490</p>
+                    </div>
+                    <div class="grid_item">
+                        <img src="./assets/blacktea.jpg" alt="food">
+                        <p class="name">홍차/Black tea/Черный чай</p>
+                        <p class="addition"></p>
+                        <p class="price">490</p>
+                    </div>
+                </div>
+                <div id="footer">
+                    <div class="line" style="margin-top: 50px;"></div>
+                    <p>Address: Kazakhstan, Astana, Dostyk Avenue</p>
+                    <p>Phone number: +7 777 655 88 77</p>
+                    <p>MONDAY - FRIDAY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11:00 - 23:00</p>
+                    <p>SATURDAY - SUNDAY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11:00 - 00:00</p>
+                    <div class="line" style="margin-bottom: 20px;"></div>
+                </div>
             </div>
             <div id="Contact" class="tabcontent">
-                <h3>Contact</h3>
-                <p>Get in touch, or swing by for a cup of coffee.</p>
+                <h3>How to get us ?</h3>
+                <p>Address: Kazakhstan, Astana, Dostyk Avenue <br><br><br>
+                    Phone number: +7 777 655 88 77</p>
             </div>
             <div id="About" class="tabcontent">
-                <h3>About</h3>
-                <p>Who we are and what we do.</p>
+                <h3></h3>
+                <p class="about_title">A restaurant with native traditional Korean food that will not leave anyone indifferent. Our main task is to introduce the visitor to Korean culture and amazing cuisine.</p>
+                <p class="about_title">Our goal is to provide an opportunity to get acquainted with Korean traditions
+                    and food</p>
+                <div class="footer_about">
+                    <h2>Pepero - Korean cafe</h2>
+                    <p>Address: Kazakhstan, Astana, Dostyk Avenue</p>
+                    <p>Phone number: +7 777 655 88 77</p>
+                    <p>MONDAY - FRIDAY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11:00 - 23:00</p>
+                    <p>SATURDAY - SUNDAY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11:00 - 00:00</p>
+                </div>
             </div>
-        </div>
-        <div class="footer">
-            
         </div>
     </div>
     </body>
